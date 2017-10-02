@@ -1,4 +1,4 @@
-# Themeswitch
+# Theme Switch
 
 This plugin is made for e107 v2.1.7 or higher. 
 
