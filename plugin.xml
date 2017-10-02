@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e107Plugin name="ThemeSwitch" lan="" version="1.0" date="2016-10-25" compatibility="2.0" installRequired="true" >
+	<author name="CaMer0n" url="http://e107.org" />
+	<summary lan="">Switch your site's theme based on userclass.</summary>
+	<description lan="">Ever wanted to beta-test a new e107 theme with only a handful of users? If so, this is the plugin you need to do it.</description>
+	<keywords>
+		<word>enhancement</word>
+		<word>theme</word>
+		<word>style</word>
+	</keywords>
+	<category>misc</category>
+	<copyright></copyright>
+	<adminLinks>
+		<link url="admin_config.php" description="" icon="images/icon_32.png" iconSmall="images/icon_16.png" icon128="images/icon_128.png" primary="true" >LAN_CONFIGURE</link>
+	</adminLinks>
+	<siteLinks>
+		<link url="index.php" perm='mainadmin' function='myLayouts'>Layouts</link>
+	</siteLinks>
+	<pluginPrefs>
+		<pref name='switch_userclass'>e_UC_NOBODY</pref>
+		<pref name='switch_language'></pref>
+		<pref name='switch_layout'>e_UC_MAINADMIN</pref>
+	</pluginPrefs>
+</e107Plugin>
