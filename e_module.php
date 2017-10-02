@@ -29,7 +29,7 @@ if(e_ADMIN_AREA !== true) // prevents inclusion of JS/CSS/meta in the admin area
 		$elay = filter_var($_GET['elay'], FILTER_SANITIZE_STRING);
 		define('THEME_LAYOUT', $elay);
 	}
-	elseif(e_PAGE === 'news.php' && !empty($_GET['tpl']))
+	elseif(e_PAGE === 'news.php' && !empty($_GET['tpl']) && ($switchLayoutPref != e_UC_NOBODY) && check_class($switchLayoutPref))
 	{
 		$nlay = filter_var($_GET['tpl'], FILTER_SANITIZE_STRING);
 		define('NEWS_LAYOUT', $nlay);
