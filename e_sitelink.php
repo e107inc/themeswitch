@@ -94,7 +94,7 @@ class themeswitch_sitelink // include plugin-folder in the name.
 		{
 		
 			$sublinks[] = array(
-				'link_name'			=> $tp->toHtml($val['@attributes']['title'],'','TITLE'),
+				'link_name'			=> $tp->toHTML($val['@attributes']['title'],'','TITLE'),
 				'link_url'			=> "index.php?elay=".$key,
 				'link_description'	=> '',
 				'link_button'		=> '',
@@ -130,7 +130,7 @@ class themeswitch_sitelink // include plugin-folder in the name.
 		{
 
 			$sublinks[] = array(
-				'link_name'			=> $tp->toHtml($val['title'],'','TITLE'),
+				'link_name'			=> $tp->toHTML($val['title'],'','TITLE'),
 				'link_url'			=> "news.php?tpl=".$key,
 				'link_description'	=> '',
 				'link_button'		=> '',

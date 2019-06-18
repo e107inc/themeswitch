@@ -187,8 +187,10 @@ class themeswitch_form_ui extends e_admin_form_ui
 
 	}
 
-	function switch_language($curval, $mode)
+	function switch_style($curval, $mode)
 	{
+		$default = e107::pref('core', 'sitetheme');
+
 
 
 		return $this->checkboxes('switch_language', $list, $curval, array('useKeyValues'=>1));
